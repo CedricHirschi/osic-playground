@@ -1,0 +1,23 @@
+{
+    "name": "IIC-OSIC-TOOLS",
+    "image": "hpretl/iic-osic-tools:2025.07",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "xuanli.spice",
+                "bitwisecook.tcl",
+                "eirikpre.systemverilog",
+                "barakh.vscode-xschem-viewer",
+                "lramseyer.vaporview",
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ],
+            "settings": {
+                "files.associations": {
+                    "*.spice": "spice"
+                }
+            }
+        }
+    },
+    "remoteUser": "root"
+}
