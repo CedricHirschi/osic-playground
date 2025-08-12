@@ -1,0 +1,28 @@
+v {xschem version=3.4.8RC file_version=1.2}
+G {}
+K {type=primitive
+format="@name [ @@clk_i @@rst_ni @@set_i[3..0] ] [ @@pwm_o ] @model"
+template="name=A1 model=pwm_dac"}
+V {}
+S {}
+F {}
+E {}
+L 4 -80 -40 -60 -40 {}
+L 4 -80 -20 -60 -20 {}
+L 4 -80 20 -60 20 {}
+L 4 60 -40 80 -40 {}
+B 5 -82.5 -42.5 -77.5 -37.5 {name=clk_i
+dir=in}
+B 5 -82.5 -22.5 -77.5 -17.5 {name=rst_ni
+dir=in}
+B 5 -82.5 17.5 -77.5 22.5 {name=set_i[3..0]
+dir=in}
+B 5 77.5 -42.5 82.5 -37.5 {name=pwm_o
+dir=out}
+P 4 5 -60 -60 -60 40 60 40 60 -60 -60 -60 {}
+T {clk_i} -50 -50 0 0 0.3 0.3 {}
+T {rst_ni} -50 -30 0 0 0.3 0.3 {}
+T {set_i[3..0]} -50 10 0 0 0.3 0.3 {}
+T {pwm_o} 0 -50 0 0 0.3 0.3 {}
+T {@symname} -60 -120 0 0 0.4 0.4 {}
+T {@name} -60 -90 0 0 0.4 0.4 {}

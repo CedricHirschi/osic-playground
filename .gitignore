@@ -1,3 +1,5 @@
 simulations/
 
 *.svg
+
+__pycache__/
